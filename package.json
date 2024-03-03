@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kirill-dev-pro/mebus-solid"
+    "url": "git+https://github.com/kirill-dev-pro/mebus-solid.git"
   },
   "issues": {
     "url": "https://github.com/kirill-dev-pro/mebus-solid/issues"
