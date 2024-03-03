@@ -1,0 +1,32 @@
+{
+  "name": "mebus-solid",
+  "description": "MeBus, the type-safe native browser event bus, bindings for solid-js",
+  "module": "index.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kirill Chuprov",
+    "email": "kirill@kcrz.dev",
+    "url": "https://kcrz.dev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirill-dev-pro/mebus-solid"
+  },
+  "issues": {
+    "url": "https://github.com/kirill-dev-pro/mebus-solid/issues"
+  },
+  "keywords": [
+    "type-safe",
+    "event bus",
+    "browser",
+    "solid-js",
+    "mebus",
+    "mebus-solid"
+  ],
+  "dependencies": {
+    "mebus": "^1.0.2",
+    "solid-js": "^1.8.15"
+  }
+}
