@@ -3,7 +3,7 @@ import { type EventSchema, MeBus } from "mebus";
 import { createEffect, createMemo } from "solid-js";
 
 /**
- * React hook for MeBus. Accepts event schema and event callbacks and returns a publish function.
+ * Solid-js hook for MeBus. Accepts event schema and event callbacks and returns a publish function.
  *
  * @param {EventSchema} eventSchema - The event schema object.
  * @param {Object} eventCallbacks - The event callbacks object.
@@ -29,7 +29,7 @@ export const useMeBus = <T extends EventSchema>({
   eventCallbacks?: {
     [K in keyof T]?: (payload: z.infer<T[K]>) => void | Promise<void>;
   };
-}) => {
+}): ((event: keyof T & string, payload: z.infer<T[keyof T]>) => void) => {
   const bus = createMemo(() => new MeBus(eventSchema), [eventSchema]);
 
   createEffect(() => {
